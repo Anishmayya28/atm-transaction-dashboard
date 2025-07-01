@@ -1,75 +1,59 @@
-# atm-transaction-dashboard
-# 🏧 ATM Performance Dashboard - Power BI Project
+# 🏧 ATM Transaction Dashboard – Power BI Project
 
-This Power BI project analyzes ATM transaction data to monitor performance, detect failures, and help financial institutions make informed decisions.
+This Power BI project analyzes ATM transaction data to monitor performance, detect failures, and help financial institutions make informed decisions using interactive visualizations and KPIs.
 
 ## 📊 Dashboard Highlights
 
-- 💳 Total & Failed Transactions
-- 📉 Failure Rate by ATM
-- 🗺️ Map of Transaction Volume by City
-- 🕒 Hourly Failure Breakdown
-- 📅 Date/City/ATM Slicers
-- 🔍 Drill-through to ATM Profile (Zone, Install Date, Type)
+- 💳 **Total & Failed Transactions**
+- 📉 **Failure Rate (%) by ATM**
+- 🗺️ **Map View**: Transaction Volume by City
+- 🕒 **Hourly Breakdown** of Failed Transactions
+- 📅 **Filters/Slicers**: Date, City, ATM ID
+- 🔍 **Drillthrough View**: ATM Profile (Zone, Install Date, Type)
 
-## 📁 Project Structure
+## 🧾 DAX Measures Used
 
-atm-performance-dashboard/
-├── ATM_Performance_Dashboard.pbix ← Main Power BI file
-├── datasets/
-│ ├── atm_transactions.csv
-│ ├── atm_metadata.csv
-│ └── dim_date.csv
-├── screenshots/
-│ ├── dashboard_overview.png
-│ ├── drillthrough.png
-│ └── map_visual.png
-└── README.md
+DAX
+Failure Rate (%) = DIVIDE([Failed Transactions], [Total Transactions], 0) * 100
+Be sure to format this measure as a percentage in Power BI.
 
-yaml
+📁 Project Structure
+mathematica
 Copy
 Edit
+atm-transaction-dashboard/
+├── atm transactions.pbix           ← Power BI dashboard file
+├── datasets/
+│   ├── atm_transactions.csv
+│   ├── atm_metadata.csv
+│   └── dim_date.csv
+├── screenshots/
+│   ├── dashboard_overview.png
+│   ├── drillthrough.png
+│   └── map_visual.png
+└── README.md
+📂 Datasets Used
+Dataset	Description
+atm_transactions	Transaction ID, Timestamp, Status, Amount, ATM ID
+atm_metadata	ATM ID, City, Zone, Install Date, Type
+dim_date	Calendar breakdown by Date, Year, Month, Day, Hour
 
----
+🔒 Note: All data is synthetic and created for demonstration purposes.
 
-## 📂 Datasets Used
+🚀 How to Use
+Clone this repo or download the .pbix file.
+Open it in Power BI Desktop.
+Load the CSV files from the datasets/ folder.
+Explore the report or publish it to the Power BI Service.
 
-| Dataset            | Description                          |
-|--------------------|--------------------------------------|
-| `atm_transactions` | Transaction ID, Timestamp, Status, Amount, ATM ID |
-| `atm_metadata`     | ATM ID, City, Zone, Install Date, Type |
-| `dim_date`         | Date, Year, Month, Day, Hour breakdown |
+🔁 Features Implemented
+📈 Line Chart: Daily transaction trends
+📊 Stacked Column: Hourly status breakdown
+📋 Table Visual: Transaction detail with formatting
+🗺️ Map Visual: City-level volumes
+🎛️ Slicers: Date, City, ATM ID
 
-> 💡 All datasets are synthetic and created for demo purposes.
-
-## 📷 Screenshots
-
-| Overview | Drill-through | Map Visual |
-|----------|---------------|------------|
-| ![Overview](screenshots/dashboard_overview.png) | ![Drillthrough](screenshots/drillthrough.png) | ![Map](screenshots/map_visual.png) |
-
----
-
-## 🚀 How to Use
-
-1. Clone the repo or download the `.pbix` file
-2. Open in Power BI Desktop
-3. Load CSVs from the `/datasets` folder
-4. Explore the report or publish to Power BI Service
-
----
-
-## 🔁 Features Implemented
-
-- Line chart: Daily transactions over time
-- Stacked column chart: Hourly transaction breakdown by status
-- Table visual: Transaction details with conditional formatting
-- Map: City-wise transaction volume
-- Slicers: Date, City, ATM ID
-
-
-## 📌 Author
-
-**Anish Mayya**  
-LinkedIn: [linkedin.com/in/anishmayya](https://linkedin.com/in/anishmayya)
+👤 Author
+Anish Mayya
+LinkedIn Profile
 
