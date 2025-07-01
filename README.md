@@ -27,7 +27,7 @@ atm-transaction-dashboard/
 │   ├── atm_metadata.csv
 │   └── dim_date.csv
 ├── screenshots/
-│   ├── dashboard_overview.png
+│   ├── (Screenshots/Screenshot%202025-07-01%20171552.png)
 │   ├── drillthrough.png
 │   └── map_visual.png
 └── README.md
