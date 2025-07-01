@@ -13,9 +13,8 @@ This Power BI project analyzes ATM transaction data to monitor performance, dete
 
 ## 🧾 DAX Measures Used
 
-DAX
+```DAX
 Failure Rate (%) = DIVIDE([Failed Transactions], [Total Transactions], 0) * 100
-Be sure to format this measure as a percentage in Power BI.
 
 📁 Project Structure
 mathematica
