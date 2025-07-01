@@ -2,16 +2,6 @@
 
 This Power BI project analyzes ATM transaction data to monitor performance, detect failures, and help financial institutions make informed decisions using interactive visualizations and KPIs.
 
-## 📑 Table of Contents
-- [Dashboard Highlights](#dashboard-highlights)
-- [DAX Measures Used](#dax-measures-used)
-- [Project Structure](#project-structure)
-- [Datasets Used](#datasets-used)
-- [How to Use](#how-to-use)
-- [Features Implemented](#features-implemented)
-- [Author](#author)
-
-
 ## 📊 Dashboard Highlights
 
 - 💳 **Total & Failed Transactions**
